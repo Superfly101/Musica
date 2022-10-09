@@ -16,7 +16,7 @@ module.exports = {
       dark: "#1D2123",
       primary: "#A4C7C6",
       secondary: "#FACD66",
-      "dark-alt": "#1A1E1F",
+      darkAlt: "#1A1E1F",
       alt: "#A4C7C6",
       backdrop: "rgba(29, 33, 35, 0.3)",
       fadedGray: "rgba(255, 255, 255, 0.1)",
