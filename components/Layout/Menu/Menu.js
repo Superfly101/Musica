@@ -2,12 +2,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Menu = () => {
-  //   const MenuItem = [{ name: "Home", icon: "/icons/home.png" }, {}, {}, {}];
   const router = useRouter();
 
   return (
-    <nav className="absolute top-20 left-4 flex flex-col gap-4">
-      <ul className="bg-darkAlt p-4 flex flex-col gap-6 rounded-full">
+    <nav className="hidden absolute top-20 left-4 flex-col gap- md:flex">
+      <ul className="bg-darkAlt py-4 px-3 flex flex-col items-center gap-6 rounded-full">
         <li>
           <Link href="/">
             <a>
@@ -97,7 +96,7 @@ const Menu = () => {
         </li>
       </ul>
 
-      <ul className="bg-darkAlt p-4 rounded-full flex flex-col gap-4">
+      <ul className="bg-darkAlt py-4 px-3 items-center rounded-full flex flex-col gap-4">
         <li>
           <Link href="">
             <a>
