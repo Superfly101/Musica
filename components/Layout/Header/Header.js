@@ -29,10 +29,6 @@ const Header = () => {
           className="py-2 px-12 bg-dark w-full text-sm text-light"
         />
       </div>
-      {/* <div className="flex flex-col gap-2 md:hidden superfly hamburger">
-        <div className="bg-light w-6 h-0.5 rounded-full "></div>
-        <div className="bg-light w-6 h-0.5 rounded-full "></div>
-      </div> */}
 
       <div
         className="flex flex-col gap-2 md:hidden cursor-pointer"
