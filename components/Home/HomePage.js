@@ -7,6 +7,7 @@ const HomePage = () => {
     <section className="bg-dark min-h-screen">
       <Header />
       <Menu />
+
       <MusicPlayer />
     </section>
   );

@@ -28,6 +28,9 @@ module.exports = {
       dropShadow: {
         "3xl": "0px -25px 100px rgba(16, 16, 16, 0.51)",
       },
+      transitionTimingFunction: {
+        "in-expo": "cubic-bezier(0.645, 0.045, 0.355, 1)",
+      },
     },
   },
   plugins: [],
