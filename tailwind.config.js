@@ -11,17 +11,18 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    colors: {
-      light: "#EFEEE0",
-      dark: "#1D2123",
-      primary: "#A4C7C6",
-      secondary: "#FACD66",
-      darkAlt: "#1A1E1F",
-      alt: "#A4C7C6",
-      backdrop: "rgba(29, 33, 35, 0.3)",
-      fadedGray: "rgba(255, 255, 255, 0.1)",
-    },
     extend: {
+      colors: {
+        light: "#EFEEE0",
+        dark: "#1D2123",
+        primary: "#A4C7C6",
+        secondary: "#FACD66",
+        darkAlt: "#1A1E1F",
+        alt: "#A4C7C6",
+        blue: "#609EAF",
+        backdrop: "rgba(29, 33, 35, 0.3)",
+        fadedGray: "rgba(255, 255, 255, 0.1)",
+      },
       fontFamily: {
         sans: ["Quicksand", "sans-serif"],
       },
