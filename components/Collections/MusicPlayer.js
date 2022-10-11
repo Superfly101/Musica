@@ -4,7 +4,7 @@ const MusicPlayer = () => {
       <div className="flex justify-between items-center gap-8 fill-light">
         <div className="flex text-light items-center gap-4">
           <img src="images/playing.png" className="w-14 h-14 rounded-lg" />
-          <div className="flex flex-col justify-around">
+          <div className="flex flex-col justify-around min-w-max">
             <p className="font-bold">Seasons in</p>
             <small className="font-bold opacity-50">James</small>
           </div>
@@ -75,7 +75,7 @@ const MusicPlayer = () => {
               <path d="M8.16667 11.0527C7.89333 11.0527 7.66667 10.826 7.66667 10.5527V8.29265L7.54 8.43265C7.35333 8.63932 7.04 8.65265 6.83333 8.47265C6.62667 8.29265 6.61333 7.97265 6.79333 7.76598L7.79333 6.65265C7.93333 6.49932 8.15333 6.44598 8.34667 6.51932C8.54 6.59932 8.66667 6.77932 8.66667 6.99265V10.5593C8.66667 10.8326 8.44 11.0527 8.16667 11.0527Z" />
             </svg>
           </div>
-          <div class="relative">
+          <div class="hidden relative md:block">
             <div class="bg-fadedGray rounded-full overflow-hidden">
               <div
                 class="bg-secondary w-1/2 h-1"
