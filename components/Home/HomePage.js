@@ -27,13 +27,13 @@ const HomePage = () => {
 
   return (
     <section className="px-6 flex justify-between gap-8">
-      <div className="bg-blue flex justify-between rounded-3xl w-full h-[20rem] text-white relative overflow-hidden max-w-2xl">
+      <div className="bg-blue flex justify-between rounded-3xl w-full h-[25rem] text-white relative overflow-hidden max-w-3xl">
         <img
           className="absolute w-7/12 -top-2 rotate-12 left-[68%] -scale-x-100 md:hidden"
           src="/icons/spiral.svg"
         />
         <img
-          className="hidden w-[27rem] absolute top-0 right-0 md:block"
+          className="hidden w-[34rem] absolute top-0 right-0 md:block"
           src="/icons/spiral.svg"
         />
         <section className="flex flex-col p-6 justify-between h-full">
@@ -77,7 +77,7 @@ const HomePage = () => {
           <img src="/images/demo.png" className="relative h-full -bottom-4" />
         </section>
       </div>
-      <aside className="hidden w-full lg:block">
+      <aside className="hidden w-full lx:block max-w-md">
         <h3 className="text-white font-bold text-3xl">Top charts</h3>
         <div>
           {TOP_CHARTS.map((song) => (
