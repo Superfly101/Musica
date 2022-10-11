@@ -5,8 +5,8 @@ const Menu = () => {
   const router = useRouter();
 
   return (
-    <nav className="hidden absolute top-20 left-4 flex-col gap- md:flex">
-      <ul className="bg-darkAlt py-4 px-3 flex flex-col items-center gap-6 rounded-full">
+    <nav className="hidden absolute top-20 left-4 flex-col md:flex">
+      <ul className="bg-darkAlt py-6 px-4 flex flex-col items-center gap-8 rounded-full">
         <li>
           <Link href="/">
             <a>
@@ -31,14 +31,14 @@ const Menu = () => {
           <Link href="/library">
             <a>
               <svg
-                width="22"
-                height="22"
+                // width="22"
+                // height="22"
                 viewBox="0 0 22 22"
                 xmlns="http://www.w3.org/2000/svg"
                 className={
                   router.asPath === "/library"
-                    ? "w-6 fill-secondary"
-                    : `w-6 fill-light opacity-25`
+                    ? "w-7 fill-secondary"
+                    : `w-7 fill-light opacity-25`
                 }
               >
                 <title>Library</title>
@@ -54,11 +54,11 @@ const Menu = () => {
           <Link href="">
             <a>
               <svg
-                width="22"
-                height="22"
+                // width="22"
+                // height="22"
                 viewBox="0 0 22 22"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-6 fill-light opacity-25"
+                className="w-7 fill-light opacity-25"
               >
                 <title>Radio</title>
                 <path d="M7.10419 1.83333V4.58333H6.41669C6.17835 4.58333 5.94919 4.5925 5.72919 4.62916V1.83333C5.72919 1.45749 6.04085 1.14583 6.41669 1.14583C6.79252 1.14583 7.10419 1.45749 7.10419 1.83333Z" />
@@ -72,12 +72,12 @@ const Menu = () => {
           <Link href="">
             <a>
               <svg
-                width="22"
-                height="22"
+                // width="22"
+                // height="22"
                 viewBox="0 0 22 22"
                 fill=""
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-6 fill-light opacity-25"
+                className="w-7 fill-light opacity-25"
               >
                 <title>Video Horizon</title>
                 <path d="M10.3125 7.205H1.83331V14.8408C1.83331 14.8958 1.83331 14.9508 1.84248 14.9967H10.3125V7.205Z" />
@@ -96,13 +96,13 @@ const Menu = () => {
         </li>
       </ul>
 
-      <ul className="bg-darkAlt py-4 px-3 items-center rounded-full flex flex-col gap-4">
+      <ul className="bg-darkAlt py-4 px-3 items-center rounded-full flex flex-col gap-6 mt-6">
         <li>
           <Link href="">
             <a>
               <svg
-                width="22"
-                height="22"
+                // width="22"
+                // height="22"
                 viewBox="0 0 22 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -119,8 +119,8 @@ const Menu = () => {
           <Link href="">
             <a>
               <svg
-                width="22"
-                height="22"
+                // width="22"
+                // height="22"
                 viewBox="0 0 22 22"
                 fill=""
                 xmlns="http://www.w3.org/2000/svg"
