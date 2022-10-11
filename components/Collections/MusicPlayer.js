@@ -1,18 +1,18 @@
 const MusicPlayer = () => {
   return (
-    <section className="absolute bottom-0 left-0 w-full py-6 md:py-8 px-4 md:px-12 drop-shadow-3xl backdrop-blur-lg bg-backdrop border border-fadedGray">
+    <section className="fixed bottom-0 left-0 w-full py-4 md:py-6 px-4 md:px-12 drop-shadow-3xl backdrop-blur-lg bg-backdrop border border-fadedGray">
       <div className="flex justify-between items-center gap-8 fill-light">
         <div className="flex text-light items-center gap-4">
-          <img src="images/playing.png" className="w-16 h-16 rounded-lg" />
-          <div className="">
+          <img src="images/playing.png" className="w-14 h-14 rounded-lg" />
+          <div className="flex flex-col justify-around">
             <p className="font-bold">Seasons in</p>
             <small className="font-bold opacity-50">James</small>
           </div>
         </div>
-        <div className="flex flex-col gap-4 md:w-4/6">
+        <div className="flex flex-col gap-7 md:w-4/6">
           <div className="flex justify-center items-center gap-4 sm:gap-8">
             <svg
-              className="hidden w-6 h-6 md:block"
+              className="hidden w-5 h-5 md:block"
               width="16"
               height="17"
               viewBox="0 0 16 17"
@@ -25,7 +25,7 @@ const MusicPlayer = () => {
             </svg>
 
             <svg
-              className="hidden w-6 h-6 md:block"
+              className="hidden w-5 h-5 md:block"
               width="16"
               height="17"
               viewBox="0 0 16 17"
@@ -37,11 +37,11 @@ const MusicPlayer = () => {
               <path d="M2.50667 13.3926C2.23334 13.3926 2.00667 13.166 2.00667 12.8926V4.65265C2.00667 4.37932 2.23334 4.15265 2.50667 4.15265C2.78001 4.15265 3.00667 4.37932 3.00667 4.65265V12.8926C3.00667 13.166 2.78001 13.3926 2.50667 13.3926Z" />
             </svg>
 
-            <div className="py-2.5 px-3 flex items-center bg-secondary rounded-full">
+            <div className="py-[10px] px-[12px] flex items-center bg-secondary rounded-full shadow-[0px_0px_18px_rgba(255,255,255,0.3)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 384 512"
-                className="w-3"
+                className="w-2 fill-white"
               >
                 <title>Play</title>
                 <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
@@ -49,7 +49,7 @@ const MusicPlayer = () => {
             </div>
 
             <svg
-              className="w-6 h-6"
+              className="w-5 h-5"
               width="16"
               height="17"
               viewBox="0 0 16 17"
@@ -62,7 +62,7 @@ const MusicPlayer = () => {
             </svg>
 
             <svg
-              className="hidden w-6 h-6 md:block"
+              className="hidden w-5 h-5 md:block"
               width="16"
               height="17"
               viewBox="0 0 16 17"
@@ -75,13 +75,25 @@ const MusicPlayer = () => {
               <path d="M8.16667 11.0527C7.89333 11.0527 7.66667 10.826 7.66667 10.5527V8.29265L7.54 8.43265C7.35333 8.63932 7.04 8.65265 6.83333 8.47265C6.62667 8.29265 6.61333 7.97265 6.79333 7.76598L7.79333 6.65265C7.93333 6.49932 8.15333 6.44598 8.34667 6.51932C8.54 6.59932 8.66667 6.77932 8.66667 6.99265V10.5593C8.66667 10.8326 8.44 11.0527 8.16667 11.0527Z" />
             </svg>
           </div>
-          <div className="hidden w-full h-1 bg-fadedGray rounded-full truncate md:block">
-            <div className="h-1 w-2/5 bg-secondary"></div>
+          <div class="relative">
+            <div class="bg-fadedGray rounded-full overflow-hidden">
+              <div
+                class="bg-secondary w-1/2 h-1"
+                role="progressbar"
+                aria-label="music progress"
+                aria-valuenow="1456"
+                aria-valuemin="0"
+                aria-valuemax="4550"
+              ></div>
+            </div>
+            <div class="ring-white ring-2 absolute left-1/2 top-1/2 w-4 h-4 -mt-2 -ml-2 flex items-center justify-center bg-transparent rounded-full shadow">
+              <div class="w-3 h-3 bg-secondary rounded-full ring-1 ring-inset ring-slate-900/5"></div>
+            </div>
           </div>
         </div>
         <div className="hidden items-center gap-2 md:flex">
           <svg
-            className="w-6 h-6"
+            className="w-5 h-5"
             width="18"
             height="18"
             viewBox="0 0 18 18"
@@ -93,8 +105,8 @@ const MusicPlayer = () => {
             <path d="M14.8725 14.4375C14.7525 14.4375 14.64 14.4 14.535 14.325C14.2875 14.1375 14.235 13.785 14.4225 13.5375C16.425 10.8675 16.425 7.13249 14.4225 4.46249C14.235 4.21499 14.2875 3.86249 14.535 3.67499C14.7825 3.48749 15.135 3.53999 15.3225 3.78749C17.625 6.85499 17.625 11.145 15.3225 14.2125C15.2175 14.3625 15.045 14.4375 14.8725 14.4375Z" />
             <path d="M10.515 2.83501C9.675 2.37001 8.6025 2.49001 7.5075 3.17251L5.3175 4.54501C5.1675 4.63501 4.995 4.68751 4.8225 4.68751H4.125H3.75C1.935 4.68751 0.9375 5.68501 0.9375 7.50001V10.5C0.9375 12.315 1.935 13.3125 3.75 13.3125H4.125H4.8225C4.995 13.3125 5.1675 13.365 5.3175 13.455L7.5075 14.8275C8.1675 15.24 8.8125 15.4425 9.4125 15.4425C9.8025 15.4425 10.1775 15.3525 10.515 15.165C11.3475 14.7 11.8125 13.7325 11.8125 12.4425V5.55751C11.8125 4.26751 11.3475 3.30001 10.515 2.83501Z" />
           </svg>
-          <div className="w-32 h-0.5 bg-fadedGray rounded-full truncate">
-            <div className="h-0.5 w-2/5 bg-secondary"></div>
+          <div className="w-32 bg-fadedGray rounded-full truncate">
+            <div className="h-[3px] w-2/5 bg-secondary"></div>
           </div>
         </div>
       </div>
