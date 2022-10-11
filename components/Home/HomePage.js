@@ -3,18 +3,21 @@ import Layout from "../Layout/Layout";
 const HomePage = () => {
   const TOP_CHARTS = [
     {
+      id: "1",
       title: "Golden age of 80s",
       artist: "Sean swadder",
       duration: "2:34:45",
       coverArt: "/images/cover-art.png",
     },
     {
+      id: "2",
       title: 'Reggae "ng" blues',
       artist: "Dj Yk mule",
       duration: "1:02:42",
       coverArt: "/images/cover-art.png",
     },
     {
+      id: "3",
       title: "GTomorrow's tune",
       artist: "Obi Datti",
       duration: "2:01:25",
@@ -78,7 +81,10 @@ const HomePage = () => {
         <h3 className="text-white font-bold text-3xl">Top charts</h3>
         <div>
           {TOP_CHARTS.map((song) => (
-            <article className="p-4 rounded-xl flex bg-darkAlt my-3 rounded-2xl">
+            <article
+              className="p-4 rounded-xl flex bg-darkAlt my-3 rounded-2xl"
+              key={song.id}
+            >
               <img src={song.coverArt} />
               <div className="text-white ml-6">
                 <h3 className="text-md">{song.title}</h3>
