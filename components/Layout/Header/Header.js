@@ -28,8 +28,8 @@ const Header = () => {
             className={`bg-light w-7 h-0.5 rounded-full transition-transform ${transform2}`}
           ></div>
         </div>
-        <div>
-          <img src="/icons/logo.png" />
+        <div className="w-8">
+          <img src="/icons/logo.png" className="w-full" />
         </div>
         <div className="hidden relative w-full items-center md:flex">
           <label htmlFor="search" className="absolute top-2.9 left-4">

@@ -1,4 +1,4 @@
-import MusicPlayer from "../Collections/MusicPlayer";
+import MusicPlayer from "../MusicPlayer/MusicPlayer";
 import Header from "./Header/Header";
 import Menu from "./Menu/Menu";
 

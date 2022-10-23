@@ -75,10 +75,10 @@ const MusicPlayer = () => {
               <path d="M8.16667 11.0527C7.89333 11.0527 7.66667 10.826 7.66667 10.5527V8.29265L7.54 8.43265C7.35333 8.63932 7.04 8.65265 6.83333 8.47265C6.62667 8.29265 6.61333 7.97265 6.79333 7.76598L7.79333 6.65265C7.93333 6.49932 8.15333 6.44598 8.34667 6.51932C8.54 6.59932 8.66667 6.77932 8.66667 6.99265V10.5593C8.66667 10.8326 8.44 11.0527 8.16667 11.0527Z" />
             </svg>
           </div>
-          <div class="hidden relative md:block">
-            <div class="bg-fadedGray rounded-full overflow-hidden">
+          <div className="hidden relative md:block">
+            <div className="bg-fadedGray rounded-full overflow-hidden">
               <div
-                class="bg-secondary w-1/2 h-1"
+                className="bg-secondary w-1/2 h-1"
                 role="progressbar"
                 aria-label="music progress"
                 aria-valuenow="1456"
@@ -86,8 +86,8 @@ const MusicPlayer = () => {
                 aria-valuemax="4550"
               ></div>
             </div>
-            <div class="ring-white ring-2 absolute left-1/2 top-1/2 w-4 h-4 -mt-2 -ml-2 flex items-center justify-center bg-transparent rounded-full shadow">
-              <div class="w-3 h-3 bg-secondary rounded-full ring-1 ring-inset ring-slate-900/5"></div>
+            <div className="ring-white ring-2 absolute left-1/2 top-1/2 w-4 h-4 -mt-2 -ml-2 flex items-center justify-center bg-transparent rounded-full shadow">
+              <div className="w-3 h-3 bg-secondary rounded-full ring-1 ring-inset ring-slate-900/5"></div>
             </div>
           </div>
         </div>
