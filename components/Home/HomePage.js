@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
       <section className="px-6 flex flex-col justify-between gap-8 lx:flex-row">
-        <div className="bg-blue flex justify-between rounded-3xl w-full h-[25rem] text-white relative overflow-hidden min-w-[35rem]">
+        <div className="bg-blue flex justify-between rounded-3xl w-full h-[25rem] text-white relative overflow-hidden md:min-w-[35rem]">
           <img
             className="absolute w-7/12 -top-2 rotate-12 left-[68%] -scale-x-100 md:hidden"
             src="/icons/spiral.svg"
