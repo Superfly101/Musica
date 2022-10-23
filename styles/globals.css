@@ -4,6 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .background {
+    background: linear-gradient(180deg, #1d212300 0%, #1d2123),
+      url("/images/Lead-image.png");
+    /* background-repeat: no-repeat; */
+    /* background: linear-gradient(180deg, #1d2123cc 0%, #1d2123 61.48%); */
+    /* background-image: url("/images/Lead-image.png"); */
+    background-size: 100%;
+  }
+}
+
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {

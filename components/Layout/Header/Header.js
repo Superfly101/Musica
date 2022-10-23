@@ -16,9 +16,9 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-dark flex p-6 justify-between items-center gap-8 md:px-8">
+      <header className="relative bg-transparent flex p-6 justify-between items-center gap-8 md:px-8">
         <div
-          className="flex flex-col gap-2 md:hidden cursor-pointer relative z-30"
+          className="flex flex-col gap-2 md:hidden cursor-pointer relative z-50"
           onClick={toggleSideMenu}
         >
           <div
@@ -39,7 +39,7 @@ const Header = () => {
             id="search"
             type="text"
             placeholder="Search"
-            className="py-2 px-12 bg-dark w-full text-sm text-light"
+            className="py-2 px-12 bg-transparent w-full text-sm text-light"
           />
         </div>
         <div>
@@ -50,7 +50,7 @@ const Header = () => {
             viewBox="0 0 26 26"
             fill="transparent"
             xmlns="http://www.w3.org/2000/svg"
-            className="stroke-light opacity-25 cursor-pointer hover:stroke-secondary hover:opacity-100"
+            className="stroke-light opacity-25 cursor-pointer hover:stroke-secondary hover:opacity-100 md:hidden"
           >
             <path
               d="M24.5 24.25L19.0625 18.8125M22 11.75C22 17.2728 17.5228 21.75 12 21.75C6.47715 21.75 2 17.2728 2 11.75C2 6.22715 6.47715 1.75 12 1.75C17.5228 1.75 22 6.22715 22 11.75Z"

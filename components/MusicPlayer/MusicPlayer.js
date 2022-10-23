@@ -1,9 +1,9 @@
 const MusicPlayer = () => {
   return (
-    <section className="fixed bottom-0 left-0 w-full py-4 md:py-6 px-4 md:px-12 drop-shadow-3xl backdrop-blur-lg bg-backdrop border border-fadedGray">
+    <section className="fixed z-20 bottom-0 left-0 w-full py-4 md:py-6 px-4 md:px-12 drop-shadow-3xl backdrop-blur-lg bg-backdrop border border-fadedGray">
       <div className="flex justify-between items-center gap-8 fill-light">
         <div className="flex text-light items-center gap-4">
-          <img src="images/playing.png" className="w-14 h-14 rounded-lg" />
+          <img src="/images/playing.png" className="w-14 h-14 rounded-lg" />
           <div className="flex flex-col justify-around min-w-max">
             <p className="font-bold">Seasons in</p>
             <small className="font-bold opacity-50">James</small>

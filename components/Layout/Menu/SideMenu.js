@@ -7,7 +7,7 @@ const SideMenu = ({ className }) => {
   return (
     <aside
       aria-hidden="true"
-      className={`absolute min-h-screen w-9/12 top-0 left-0 bg-darkAlt z-20 py-8 px-4 transition-all duration-250 ease-in-expo ${
+      className={`absolute z-40 min-h-screen w-9/12 top-0 left-0 bg-darkAlt z-20 py-8 px-4 transition-all duration-250 ease-in-expo ${
         className || `-translate-x-full`
       } `}
     >

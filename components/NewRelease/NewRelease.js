@@ -30,12 +30,12 @@ const NewRelease = () => {
     {
       title: "Life in bubble",
       artist: "Sean swadder",
-      coverArt: "/images/Rectangle 14.png",
+      coverArt: "/images/Rectangle 19.png",
     },
     {
       title: "Mountain",
       artist: "Krisx",
-      coverArt: "/images/Rectangle 15.png",
+      coverArt: "/images/Rectangle 20.png",
     },
     {
       title: "Limits",
